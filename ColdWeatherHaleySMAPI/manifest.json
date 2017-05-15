@@ -7,7 +7,7 @@
       "PatchVersion": 0,
       "Build": null
    },
-   "Description": "Haley's clothes change in winter",
+   "Description": "Haley's clothes change in winter (sprites by: bingbongsingalong on Nexus)",
    "UniqueID": "LordXamon.ColdWeatherHaleyPRO",
    "EntryDll": "ColdWeatherHaleySMAPI.dll"
 }

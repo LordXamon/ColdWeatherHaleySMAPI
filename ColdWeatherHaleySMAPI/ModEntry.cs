@@ -57,7 +57,7 @@ namespace ColdWeatherHaleySMAPI
             
         }
 
-        private void Event_WinterIsAlreadyHere(object sender, EventArgs e)//the same, but for people who not install this mod before the winter start (this is redundant?)
+        private void Event_WinterIsAlreadyHere(object sender, EventArgs e)//the same, I do not know if the saved game stores the sprites in use, I guess not
         {
             
         }
