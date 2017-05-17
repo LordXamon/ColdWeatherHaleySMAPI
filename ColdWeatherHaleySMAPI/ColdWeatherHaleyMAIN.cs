@@ -15,12 +15,9 @@ namespace ColdWeatherHaleySMAPI
         /*********
         ** Public methods
         *********/
-        /// <summary>Initialise the mod.</summary>
         /// <param name="helper">Provides methods for interacting with the mod directory, such as read/writing a config file or custom JSON files.</param>
         public override void Entry(IModHelper helper)
-        {
-            ControlEvents.KeyPressed += this.ReceiveKeyPress;//ONLY FOR TESTS, DELETE ON RELEASE
-            
+        {            
             TimeEvents.SeasonOfYearChanged += this.Event_WinterIsComing;
             SaveEvents.AfterLoad += this.Event_WinterIsAlreadyHere;
         }
@@ -28,7 +25,6 @@ namespace ColdWeatherHaleySMAPI
         /*********
         ** Private methods
         *********/
-        /// <summary>The method invoked when the player presses a keyboard button.</summary>
         /// <param name="sender">The event sender.</param>
         /// <param name="e">The event data.</param>
 
@@ -57,12 +53,6 @@ namespace ColdWeatherHaleySMAPI
         {
             changeSprite();
         }
-        
-        private void ReceiveKeyPress(object sender, EventArgsKeyPressed e)//DELETE ON RELEASE
-        {
-            this.Monitor.Log($"Player pressed {e.KeyPressed}.");
-        }
-
 
     }
 }
