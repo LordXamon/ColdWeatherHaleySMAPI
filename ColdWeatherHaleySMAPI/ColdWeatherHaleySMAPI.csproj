@@ -61,15 +61,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ModEntry.cs" />
+    <Compile Include="ColdWeatherHaleyMAIN.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="assets\ColdHaleyCharacter.xnb" />
-    <None Include="assets\ColdHaleyPortrait.xnb" />
-    <None Include="assets\VanillaHaleyCharacter.xnb" />
-    <None Include="assets\VanillaHaleyPortrait.xnb" />
-    <None Include="manifest.json" />
+    <None Include="assets\cold_haley_character.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="assets\cold_haley_portrait.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="assets\vanilla_haley_character.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="assets\vanilla_haley_portrait.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="manifest.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
