@@ -39,9 +39,6 @@ namespace ColdWeatherHaleySMAPI
             }
             else
             {//not is winter
-
-                Helper.Content.Load<Texture2D>("assets/vanilla_haley_portrait.xnb", ContentSource.ModFolder);
-                Helper.Content.Load<Texture2D>("assets/vanilla_haley_character.xnb", ContentSource.ModFolder);
                 haley.Portrait = Helper.Content.Load<Texture2D>(Path.Combine(Helper.DirectoryPath, "assets", "vanilla_haley_portrait.xnb"), ContentSource.ModFolder);
                 haley.sprite.Texture = Helper.Content.Load<Texture2D>(Path.Combine(Helper.DirectoryPath, "assets", "vanilla_haley_character.xnb"), ContentSource.ModFolder);
             }
