@@ -34,11 +34,14 @@ namespace ColdWeatherHaleySMAPI
 
             if (Game1.currentSeason.Equals("winter"))
             {//is winter
-                haley.Portrait = Helper.Content.Load<Texture2D>(Path.Combine(Helper.DirectoryPath, "assets", "cold_haley_portrait.xnb"), ContentSource.ModFolder);
-                haley.sprite.Texture = Helper.Content.Load<Texture2D>(Path.Combine(Helper.DirectoryPath, "assets", "cold_haley_character.xnb"), ContentSource.ModFolder);
+                haley.Portrait = Helper.Content.Load<Texture2D>("assets/cold_haley_portrait.xnb", ContentSource.ModFolder);
+                haley.sprite.Texture = Helper.Content.Load<Texture2D>("assets/cold_haley_character.xnb", ContentSource.ModFolder);
             }
             else
             {//not is winter
+
+                Helper.Content.Load<Texture2D>("assets/vanilla_haley_portrait.xnb", ContentSource.ModFolder);
+                Helper.Content.Load<Texture2D>("assets/vanilla_haley_character.xnb", ContentSource.ModFolder);
                 haley.Portrait = Helper.Content.Load<Texture2D>(Path.Combine(Helper.DirectoryPath, "assets", "vanilla_haley_portrait.xnb"), ContentSource.ModFolder);
                 haley.sprite.Texture = Helper.Content.Load<Texture2D>(Path.Combine(Helper.DirectoryPath, "assets", "vanilla_haley_character.xnb"), ContentSource.ModFolder);
             }
